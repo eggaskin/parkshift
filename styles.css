@@ -1,0 +1,223 @@
+/* BEGIN: Style all titles */
+h1 {
+    /* center all titles */
+    text-align: center;
+    /* set the font family */
+    font-family: "Impact", cursive, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    /* padding: 30px; */
+    color: #333A7B;
+}
+
+* {
+    color: #333A7B;
+}
+
+h2 {
+    /* center all titles */
+    text-align: center;
+    /* set the font family */
+    font-family: "Arial", cursive, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    color: #333A7B;
+}
+
+#popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.timer {
+    flex:4;
+}
+
+.lot {
+    flex:3; 
+    /* flex-direction: row;  */
+    padding: 75px;
+    margin-left: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+select {
+    margin: 1rem;
+    border: none;
+    background-color: beige;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    padding: .3rem;
+    font-size: 1.1rem;
+}
+
+select:hover {
+    background-color: #70C6C7;
+    /* color: white; */
+}
+
+#lotTable {
+    display:none;
+    margin: 1rem;
+    margin-top: 50px;
+}
+
+
+.functional {
+    display: flex;
+
+}
+
+.info {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome {
+    /* align items vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* set flex ration */
+    flex: 3;
+}
+
+#message {
+    text-align: center;
+    /* set the font family */
+    font-family: "Arial", cursive, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    color: #333A7B;
+}
+/* END: Style all titles */ 
+body {
+    background-color: #B4FFD8;
+    box-sizing: border-box;
+  font-family: "Arial", cursive, sans-serif;
+  display: grid;
+  height: 90vh;
+  place-items: center;
+}
+
+/* Style payout page */
+.itemBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #83FFC0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.itemsGrid {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+  
+/* COUNTWODN TIMER */
+.base-timer {
+    position: relative;
+    padding-left: 50px;
+
+    width: 300px;
+    height: 300px;
+    font-family: "Impact";
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* scaleX(1) = CLOCKWISE, scaleX(-1) = ANTI-CLOCKWISE */
+  .base-timer__svg {
+    transform: scaleX(1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.arc {
+    color: beige;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+  }
+  
+  .buttons {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+   button {
+    margin: 1rem;
+    border: none;
+    background-color: beige;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    padding: .3rem;
+    font-size: 1.1rem;
+  }
+  
+  button:hover {
+    background-color: #70C6C7;
+    /* color: white; */
+  }
+  
+   button:disabled {
+    cursor: not-allowed;
+  }
+
+   button:disabled:hover{
+    background-color:beige;
+  }

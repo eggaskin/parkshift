@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ParkShift</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .chat {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .bot-message {
+            background-color: #e6e6e6;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .prompt-message {
+            font-weight: bold;
+        }
+
+        .homepage-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+
+        
+        <div class="chat">
+            <div id="chatContainer">
+                <div class="chat-message bot">
+                    <span class="prompt-message">Parking Buddy:</span> How can I assist you today?
+                </div>
+                <div class="message-container">
+                    
+                </div>
+            </div>
+            <div class="user-input">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button id="sendMessage">Send Message</button>
+            </div>
+            <a href="index.html" class="homepage-link">Back!</a>
+        </div>
+        <script src="buddy.js"></script>
+
+    </body>
+    </html>
